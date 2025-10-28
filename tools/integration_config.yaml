@@ -1,0 +1,16 @@
+tool_integration:
+  workflow:
+    - name: "test_creation"
+      steps:
+        - action: "read_source"
+          tool: "file_editor"
+        - action: "search_docs"
+          tool: "web_search"
+        - action: "create_test"
+          tool: "file_editor"
+        - action: "run_test"
+          tool: "terminal"
+  
+  permissions:
+    chain_commands: true
+    share_context: true

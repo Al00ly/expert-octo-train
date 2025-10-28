@@ -1,0 +1,10 @@
+web_search:
+  allowed_domains:
+    - "docs.pytest.org"
+    - "python.org"
+    - "stackoverflow.com"
+  rate_limits:
+    requests_per_minute: 10
+  cache:
+    enabled: true
+    duration: "1h"

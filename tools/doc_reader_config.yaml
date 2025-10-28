@@ -1,0 +1,11 @@
+document_reader:
+  supported_formats:
+    - "markdown"
+    - "pdf"
+    - "rst"
+  doc_locations:
+    - "/docs"
+    - "/specifications"
+  indexing:
+    enabled: true
+    update_interval: "1h"

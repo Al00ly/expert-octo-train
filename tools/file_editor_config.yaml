@@ -1,0 +1,11 @@
+file_editor:
+  permissions:
+    read: true
+    write: true
+    create: true
+  file_types:
+    - ".py"    # ملفات Python
+    - ".test.py"  # ملفات الاختبار
+    - ".json"  # ملفات التكوين
+  max_file_size: "10MB"
+  backup: true

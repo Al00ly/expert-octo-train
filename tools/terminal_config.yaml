@@ -1,0 +1,8 @@
+terminal_capabilities:
+  allowed_commands:
+    - npm: ["install", "test", "run"]
+    - pytest: ["run", "coverage"]
+    - git: ["clone", "pull", "status"]
+  security:
+    restricted_commands: ["rm -rf", "sudo"]
+  working_directory: "${workspace_root}"
