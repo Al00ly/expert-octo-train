@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
 
 interface FormData {
   name: string
@@ -112,8 +110,6 @@ const Contact: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
@@ -208,7 +204,6 @@ const Contact: NextPage = () => {
           </form>
         </div>
       </main>
-      <Footer />
     </div>
   )
 }
